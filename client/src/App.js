@@ -3,7 +3,7 @@ import { Route, withRouter, Redirect, Switch } from 'react-router-dom';
 import Auth from './Auth';
 
 import Header from './components/Header';
-import Body from './components/Body';
+import Dashboard from './components/Dashboard';
 import Callback from './components/Callback';
 //import NotFound from './components/404';
 
@@ -31,7 +31,7 @@ class App extends Component {
           <Switch>
             <Route path="/dashboard" render={() => (
               isAuth ?
-                <Body /> : <Redirect to="/" />
+                <Dashboard /> : <Redirect to="/" />
             )} />
 
             <Route path="/" exact render={() => {

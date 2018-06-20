@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { switchTab, setFavorite, changePage } from '../actions/main_dispatches';
 
-class Body extends Component {
+class Dashboard extends Component {
 
   copyLinkAddress = link => {
     let input = document.createElement('input');
@@ -76,4 +76,4 @@ const mapStateToProps = (state, props) => {
     current_page: state.current_page
   }
 }
-export default connect(mapStateToProps, mapActionsToProps)(Body);
+export default connect(mapStateToProps, mapActionsToProps)(Dashboard);
