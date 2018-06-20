@@ -1,4 +1,4 @@
 module.exports = {
-  db_username: 'JD',
+  db_username: 'CY',
   db_pass: 'password123'
 }
