@@ -51,7 +51,7 @@ class App extends Component {
 
                   </div>
                 )
-              } else return <Redirect to="/Body" />
+              } else return <Redirect to="/dashboard" />
             }} />
 
             <Route path="/callback" render={() => (

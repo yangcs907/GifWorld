@@ -77,7 +77,7 @@ export function getSearchResults(e) {
           dispatch(actions.updateFavorites(res.data ? res.data : []));
 
           let api_url = 'https://api.giphy.com/v1/gifs/search';
-          let api_key = '3K2ZmyEMrXGGyR7EGBGnbti1HZNk2TZL';
+          let api_key = 'VWw5PFbiuQekPp88FBeZrRvdbCDVgWgV';
           let { search, offset, favorites, query } = getState();
 
           search = is_page ? query : search;
