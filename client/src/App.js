@@ -54,9 +54,9 @@ class App extends Component {
               } else return <Redirect to="/dashboard" />
             }} />
 
-          //<Route path="/callback" render={() => (
-            //  <Callback processAuth={auth.processAuthentication} />
-          //  )} />
+          <Route path="/callback" render={() => (
+              <Callback processAuth={auth.processAuthentication} />
+           )} />
 
 
           </Switch>
