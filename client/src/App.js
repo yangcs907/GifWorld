@@ -64,7 +64,7 @@ class App extends Component {
         </div>
 
         <footer className="row split y-center">
-          <p>&copy; {new Date().getFullYear()} GifWorld</p>
+          <p>&copy; {new Date().getFullYear()} GifWorld by Chris Yang</p>
           <p></p>
         </footer>
       </main>
