@@ -30,8 +30,7 @@ class App extends Component {
 
           <Switch>
             <Route path="/dashboard" render={() => (
-              isAuth ?
-                <Dashboard /> : <Redirect to="/" />
+                <Dashboard />
             )} />
 
             <Route path="/" exact render={() => {
