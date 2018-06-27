@@ -23,7 +23,7 @@ const Header = props => (
         <h4 style={logoStyle}><i className="fa fa-bolt"></i> GifWorld</h4>
       </Link>
 
-      {props.isAuth ? (
+      {props.isAuth} ? (
         <div className="input-wrap">
           <input type="text" style={searchStyle}
             className="search"

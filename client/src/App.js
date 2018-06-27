@@ -23,14 +23,14 @@ class App extends Component {
     return (
       <main className="column split">
         <div className="content">
-          <Header
+          <header
             isAuth={isAuth}
             login={auth.login}
             logout={auth.logout} />
-
           <Switch>
             <Route path="/dashboard" render={() => (
-                <Dashboard />
+                isAuth ?
+                <Dashboard /> : <Redirect to="/" />
             )} />
 
             <Route path="/" exact render={() => {
@@ -50,7 +50,7 @@ class App extends Component {
 
                   </div>
                 )
-              } else return <Redirect to="/dashboard" />
+              } else return (<Redirect to="/dashboard" />)
             }} />
 
           <Route path="/callback" render={() => (
