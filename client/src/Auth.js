@@ -7,8 +7,6 @@ export default class Auth {
       domain: 'yangcs907.auth0.com',
       clientID: 'vkPaC4Qh3JhQCl2s1lnkL5c36VHToUaP',
       redirectUri: 'https://gif-world.herokuapp.com/dashboard',
-      //'http://localhost:3000/callback'
-      // redirectUri: 'https://warm-reef-54993.herokuapp.com/callback',
       audience: 'https://yangcs907.auth0.com/api/v2/',
       responseType: 'token id_token',
       scope: 'openid email'
