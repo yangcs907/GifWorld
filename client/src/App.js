@@ -29,8 +29,7 @@ class App extends Component {
             logout={auth.logout} />
           <Switch>
             <Route path="/dashboard" render={() => (
-                isAuth ?
-                <Dashboard /> : <Redirect to="/" />
+                <Dashboard /> 
             )} />
 
             <Route path="/" exact render={() => {
